@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Library</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            padding-top: 20px;
+        }
+        .container {
+            max-width: 800px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1 class="text-center">Digital Library</h1>
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">Add a New Book</h5>
+            <form id="bookForm">
+                <div class="form-group">
+                    <label for="isbn">ISBN</label>
+                    <input type="text" class="form-control" id="isbn" placeholder="Enter ISBN" required>
+                </div>
+                <div class="form-group">
+                    <label for="author">Author Name</label>
+                    <input type="text" class="form-control" id="author" placeholder="Author Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="title">Book Title</label>
+                    <input type="text" class="form-control" id="title" placeholder="Book Title" required>
+                </div>
+                <div class="form-group">
+                    <label for="length">Book Length (pages)</label>
+                    <input type="number" class="form-control" id="length" placeholder="Book Length" required>
+                </div>
+                <div class="form-group">
+                    <label for="cover">Cover Type</label>
+                    <select class="form-control" id="cover">
+                        <option>Hardcover</option>
+                        <option>Paperback</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary">Add Book</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="mt-5">
+        <h3 class="text-center">Book Collection</h3>
+        <ul id="booksList" class="list-group">
+            <!-- Books will be listed here -->
+        </ul>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
